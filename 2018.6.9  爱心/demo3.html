@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+        	作者：waggag@outlook.com
+        	时间：2018-06-09
+        	描述：浮动实现爱心
+        -->
+		<style>
+			*{ margin:0; padding:0}
+			
+			#box{
+				position: relative; /*相对定位 参照物*/
+				width: 200px;
+				height: 200px;
+				border: 1px solid gold;
+				/*圆角属性*/
+				border-radius: 10px 10px 10px 10px;
+			}
+			
+			#box div{
+				width: 20px;
+				height: 25px;
+				background: red;
+				border-radius: 10px 10px 0 0;
+				float: left;
+			}
+			
+			#box .left{
+				transform: rotate(-60deg);
+			}
+			#box .right{
+				transform: rotate(60deg);
+				/*第一种当时实现爱心*/
+				/*transform: translateY(-25px) translateX(12px) rotate(60deg);*/
+				/*第二种爱心实现方法*/
+				/*top 0px;
+				left: 11px;*/
+				margin-left: -8px;/*外边距*/
+			}
+			.snowfall-flakes:before, .snowfall-flakes:after{
+				content: "";
+				position: absolute;
+				width: 20px;
+				height: 25px;
+				background: red;
+				border-radius: 10px 10px 0 0;
+				transform: rotate(-60deg);
+			}
+			
+			.snowfall-flakes:after{
+				content: "";
+				transform: rotate(60deg);
+				top: 0px;
+				left: 10px;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		<!--<div id="box"></div>-->
+		<div id="box">
+			<div class="left">
+				
+			</div>
+			<div class="right">
+				
+			</div>
+		</div>
+			
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery-1.2.6.min.js" ></script>
+	<script type="text/javascript" src="js/snowfall.jquery.js" ></script>
+	<script type="text/javascript">
+		$(document).snowfall(){
+			flakeCount:50
+		}
+	</script>
+</html>

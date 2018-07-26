@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <script src="main.js"></script>
+    </head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        #box{
+            width:502px;
+            height:141px;
+            background: rgba(211, 76, 76, 0.5);
+            margin: 50px auto;/*盒子魚盒子之間的距離*/
+            border-radius: 5px;
+        }
+
+        #box textarea{
+            width: 482px;
+            height: 50px;
+            margin: 10px;
+            resize: none;/*禁止拖动*/
+            border-radius: 4px;
+        }
+
+        #box #pic{
+            position: relative;
+            width: 35px;
+            height: 38px;
+            border: 1px solid darkblue;
+            margin: -8px 16px;
+            border-radius: 5px;
+        }
+
+        #box #pic img{
+            width: 35px;
+            height: 38px;
+            left: 50px;
+        }
+
+        #box #btm{
+            float: right;
+            width: 81px;
+            height: 30px;
+            background: orange;
+            margin: -28px 10px;
+            text-align: center;
+            color: aliceblue;
+            line-height: 32px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .list{
+            width: 502px;
+            height: 200px;
+            /* border: 1px solid rebeccapurple;  */
+            margin: 0px auto;
+        }
+
+        .list ul li{
+            height: 50px;
+            list-style: none;
+            border-bottom: 1px solid gold;
+        }
+
+        .list ul li img{
+            float: left;
+            width: 40px;
+            height: 30px;
+        }
+
+        .list ul li p{
+            float: left;
+        }
+
+    </style>
+    <body>
+        <div id="box">
+             <textarea id="text"></textarea>
+             <div id="pic"> 
+                 <img styple="display:block" src="images/1-160qq42252638.jpg" alt="图片加载延迟">
+                 <img styple="display:none"  src="images/1-160qq42319223.jpg" alt="图片加载延迟">
+             </div>
+             <div id="btm">
+                发表
+             </div>
+        </div>
+        <div class="list">
+            <ul>
+                <li>
+                    <img src="images/1-160qq42252638.jpg">
+                    <p>王港</p>
+                </li>
+            </ul>
+        </div>
+    </body>
+
+    <script>
+        var img = document.querySelectorAll("#box #pic img");
+        var Otext = document.getElementById("text");
+        var oBtn = document.getElementById("btm");
+        var Oui = document.querySelector(".list ul");
+        var src = img[0].src;
+
+        oBtn.onclick = function(){
+            var val = Otext.value;
+            Otext.value = "";
+            Oui.innerHTML+='<li><img src="'+src+'"><p>'+val+'</p></li>'
+
+
+        }
+
+        img[0].onclick = function(){
+            this.style.display = 'none';
+            img[1].style.display = 'block';
+            src = img[1].src;
+        }
+
+         img[1].onclick = function(){
+            this.style.display = 'none';
+            img[0].style.display = 'block';
+            src = img[0].src;
+        }
+    </script>
+</html>

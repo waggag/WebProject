@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Banner</title>
+        <!--css，层叠样式-->
+        <style>
+            /* 去掉所有的标签内外边距为零 */
+            *{
+                margin: 0px;
+                padding: 0px;    
+            }
+            /* 去掉小圆点 */
+            li{
+                list-style: none;
+            }
+
+            .box{
+                /* 相对定位，参照物 */
+                position: relative;
+                width: 100%;
+                height: 450px;
+                border: 1px solid red;
+            }
+
+            .box .b_img{
+                /* 绝对定位，移动的对象 */
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 450px;
+            }
+
+            .box .btn{
+                position: absolute;
+                bottom: 10px;
+                left: 48%;
+                width: 99px;
+                height: 24px;
+                color: rgba(0, 0, 0, 5);
+                /*圆角属性*/
+                border-radius: 7px;
+                z-index: 2;
+            }
+
+            .box .btn ul li{
+                margin: 3px 8px;
+                float: left;
+                width: 16px;
+                height: 16px;
+                background: url('images/12.jpg')
+            }
+
+            .box .btn ul li.on{
+                color: orangered;
+                border-radius: 40px;
+            }
+
+        </style>
+    </head>
+    <!--
+        1.id具有唯一性
+        2.class可以选择多个
+        3.id的权重比较大
+    -->
+    <body><!--可视区域-->
+        <div class="box">
+            <div class="b_img" style="background: url('images/1.jpg')"></div>
+            <div class="b_img" style="background: url('images/2.jpg')"></div>
+            <div class="b_img" style="background: url('images/3.jpg')"></div>
+        
+            <div class="btn">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li class="on"></li>
+                </ul>
+            </div>
+        </div>
+    </body>
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $('.btn').find('li').mouseover(function(){
+            	
+                $(this).addClass("on").siblings().removeClass('on');
+
+                $('.b_img').css({"z-index":0, "opacity":0});
+                
+                //淡入浅出
+                $('.b_img').eq(_index).css("z-index",1).fadeTo(800,1);
+                
+            });
+        });
+    </script>
+
+</html>

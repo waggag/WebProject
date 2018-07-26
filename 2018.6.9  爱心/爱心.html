@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+        	作者：waggag@outlook.com
+        	时间：2018-06-09
+        	描述：浮动实现爱心
+        -->
+        <link rel="stylesheet" type="text/css" href="js/style.css"/>
+        <style type="text/css">
+        	
+			body{
+				overflow: hidden;
+				background: url(images/bg1.jpg);
+				background-size: 100% 100%;
+			}
+        </style>
+        
+	</head>
+	<body>
+		<div id="box">
+			<div id="love">
+			</div>
+		</div>
+	</body>
+	
+	<script type="text/javascript" src="js/jquery-1.2.6.min.js" ></script>
+	<script type="text/javascript" src="js/snowfall.jquery.js" ></script>
+	<script type="text/javascript">
+		$(document).snowfall({
+			flakeCount: 50  //定义爱心的个数
+		});
+	</script>
+	
+</html>

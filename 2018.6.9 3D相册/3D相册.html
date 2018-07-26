@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>3D相册</title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			
+			body{
+				background: #000000;
+			}
+			
+			#title{
+				text-align: center;
+				text-shadow: 2px 2px 3px #F6F6F6;/*阴影*/
+				color: #fff;
+				line-height: 120px;
+			}
+
+			.box{
+				position: relative;
+				width: 100%;
+				height: 230px;
+				margin: 100px auto;
+				transform-style: preserve-3d;/*产生视觉的3D效果*/
+				perspective: 800px;/*3D效果必须配合使用的东西*/
+			}
+
+			.box img{
+				position: absolute;
+				height: 220px;
+				width: 230px;
+				-webkit-box-reflect: below 0
+				-webkit-linear-gradient(top,rgba(0,0,0, 0.5), rgba(0,0,0, 0.1));
+			}
+
+			.box img:nth-child(1){
+				left: 100px;
+			}
+			.box img:nth-child(2){
+				left: 300px;
+			}
+			.box img:nth-child(3){
+				left: 475px;
+			}
+			.box img:nth-child(4){
+				left: 675px;
+			}
+			.box img:nth-child(5){
+				left: 900px;
+			}
+			
+			.left{
+				transform: rotateY(45deg) translateZ(-50px);
+			}
+			.right{
+				transform: rotateY(-45deg) translateZ(-50px);
+			}
+			.center{
+				transform: translateZ(100px);/*移动自身的位置*/
+			}
+
+		</style>
+	</head>
+	<body>
+		<h1 id="title">相册展示系统</h1>
+		<div class="box">
+			<img src="img/1.jpg"  class="left"> 
+			<img src="img/2.jpg"  class="left">
+			<img src="img/3.jpg"  class="center">
+			<img src="img/4.jpg"  class="right">
+			<img src="img/5.jpg"  class="right">
+		</div>
+	</body>
+</html>

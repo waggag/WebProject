@@ -1,0 +1,374 @@
+/* 公共样式 */
+/* *表示通配符 */
+/*margin是盒模型的外边距，padding是盒模型的内边距*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* color: red; */
+    background-color: #f5f5f5;
+}
+
+/*设置li标签没有点*/
+li{
+    list-style: none;
+}
+
+ /* 清楚浮动的一种方式 */
+ .clear{
+    clear: both;
+}
+
+/*设置头标签的布局*/
+.header{
+    height: 150px;
+    border-bottom: 3px solid #fd8918;
+}
+
+/*设置top的高度和背景色*/
+.header .top{
+    height: 39px;
+    background-color: #fd8918;
+    border-bottom: 1px solid #e0e0e0;
+}
+/*设置inner的宽度和外边距*/
+.inner{
+    width: 1200px;
+    /* text-align: center;*/
+    margin: 0 auto;
+}
+
+/*设置left里面的布局*/
+.header .top .left{
+    float: left;
+    margin-top: 10px;
+ }
+
+ /*right标签里的各项内容*/
+ .header .top .right{
+    float: right;
+    margin-top: 10px;
+ }
+
+ .header .top .right div{
+    float: left;
+ }
+
+ /* 设置外边距为25px,可以放在一个样式表中 */
+ .header .top .right .firstpage{
+    margin-right: 25px;
+ }
+ .header .top .right .lianxi{
+    margin-right: 25px;
+ }
+
+ /* 设置第一部分的第二部分 */
+ .header .bottom{
+    height: 111px;
+ }
+
+ .header .bottom .logo{
+    margin-right: 130px;
+}
+
+/* 设置其距离title顶部的距离 */
+.header .bottom .navs{
+    padding: 32px;
+}
+.header .bottom .weixin{
+    float: right;
+    padding-top: 40px;
+}
+
+ .header .bottom .navs li{
+     float: left;
+     padding: 0px 22px;
+     /*
+    N个参数代表:
+        上下左右
+        上下  左右
+        上  左右 下
+        上  右  下  左
+     */
+     /*暂时未知*/
+     height: 50px;
+     line-height: 50px;
+ }
+
+.header .bottom .weixin div{
+    float: left;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 7px;
+}
+
+/* 设置其排列在一行 */
+.header .bottom .navs, .header .bottom .logo{
+    float: left;
+}
+
+/* 设置第三部分的内容 */
+ .banner{
+     height: 527px;
+     background-image: url(img/lunbo4.jpg);
+     /*相对定位，一般是配合绝对定位出现的，作为绝对定位的参照点*/
+     position: relative;
+ }
+
+ .banner div{
+     width: 70px;
+     height: 70px;
+     /*绝对定位*/
+     position: absolute;
+     top: 50%;
+     /*减去自身的宽度一半，将其放在中间*/
+     margin-top: -35px;
+ }
+
+ /* 设置其距离左右的位置 */
+ .banner .left_btn{
+     left: 200px;
+ }
+ .banner .right_btn{
+     right: 200px;
+ }
+
+/* 第四部分的内容 */
+
+/* 设置标题的上下间距 */
+.weG .title{
+    /* margin: 55px 25px; */
+    padding: 55px 0 25px;
+}
+
+ /* 设置底部的60px的边距 */
+ .weG{
+     padding-bottom: 60px;
+ }
+/* 设置图片的对齐方式 */
+ .weG .title img{
+     vertical-align: text-top;
+ }
+
+/* 设置字体的样式 */
+ .weG .title .text{
+     display: inline-block;
+     padding: 0 20px;
+ }
+
+ /* 图片浮动，让其显示在一行上 */
+ .weG .pics .pic{
+    float: left;
+ }
+
+
+ /* 第三部分网页的制作 */
+ .bg_wrap{
+     height: 425px;
+     padding-bottom: 20px 0;
+     background-image: url(img/xin-bg.jpg);
+ }
+
+ .bg_wrap .left{
+     width: 812px;
+     height: 445px;
+     float: left;
+ }
+
+ .bg_wrap .right{
+    width: 353px;
+    height: 445px;
+    float: right;
+}
+
+/* 设置第四部分左右标题的样式 */
+.bg_wrap .left .title{
+    height: 54px;
+    border-left: 5px solid #f08112;
+    margin-left: 5px;
+    padding-left: 7px;
+}
+
+.bg_wrap .list_wrep h4{
+    padding-top: 30px;
+    color: #f08112;
+    text-align: center;
+    font-size: 150%;
+}
+/* 设置文本的样式 */
+.bg_wrap .list_wrep .list_text{
+    margin-left: 30px;
+    color: #e0e0e0;
+}
+
+
+/* 设置日期的格式 */
+.bg_wrap .list_wrep .list_text li{
+    line-height: 25px;
+}
+
+/* 设置list_wrep的基本属性 */
+.bg_wrap .left .list_wrep{
+    margin-top: 20px;
+    background: #2e2e2e;
+    height: 350px;
+}
+
+
+/* 设置流动占据一行 */
+.bg_wrap .left .list_wrep ul li{
+    float: left;
+}
+
+.bg_wrap .left .list_wrep ul .text{
+    width: 189px;
+    height: 57px;
+    line-height: 57px;
+    text-align: center;
+    color: #fff;
+    background: url(img/tab1.png);   
+}
+
+.bg_wrap .left .list_wrep ul .text.on{
+    background: url(img/tab2.png);
+}
+
+
+
+/* 设置第四部分的的内容 */
+
+.bg_wrap .right{
+    width: 353px;
+    height: 445px;
+    float: right;
+}
+
+/* 设置标题的部分样式 */
+.bg_wrap .right .title{
+    height: 54px;
+    /* 设置左边界的颜色 */
+    border-left: 5px solid #f08112;
+
+    margin-left: 5px;
+    padding-left: 7px;
+}
+
+/* 设置内容的样式 */
+.bg_wrap .right .hoves{
+    margin-top: 20px;
+    background: #2e2e2e;
+    height: 318px;
+    padding: 18px 29px 14px 20px;
+}
+
+/* 设置内容中分块内容的样式 */
+.bg_wrap .right .hoves li{
+    width: 118px;
+    height: 82px;
+    background: url(../img/k_icon1.1.jpg);
+    float: left;
+    margin: 12px 17px;
+}
+
+/* 加载不同的图片，在低版本的浏览器中可能无法正常使用 */
+.bg_wrap .right .hoves li:nth-child(2){
+    background: url(../img/k_icon2.jpg);
+}
+
+.bg_wrap .right .hoves li:nth-child(3){
+    background: url(../img/k_icon3.jpg);
+}
+.bg_wrap .right .hoves li:nth-child(4){
+    background: url(../img/k_icon4.jpg);
+}
+
+.bg_wrap .right .hoves li:nth-child(5){
+    background: url(../img/k_icon5.jpg);
+}
+
+.bg_wrap .right .hoves li:nth-child(6){
+    background: url(../img/k_icon6.jpg);
+}
+
+
+
+/* 第五部分样式的设置 */
+.five{
+    height: 310px;
+    background-image: url(../img/center_bg.jpg);
+}
+
+
+/* 第六部分的样式 */
+.six{
+    height: 164px;
+    padding-top: 34px;
+    border-bottom-color: #fd8918;
+}
+
+.six h2{
+    height: 55px;
+    line-height: 55px;
+}
+
+/* 图片框的设置 */
+.six ul{
+    height: 1378px;
+    height: 35px;
+    padding: 10px 0px;
+}
+
+/* 图片的宽度 */
+.six ul li{
+    width: 106px;
+    height: 35px;
+    float: left;
+}
+/* 装载图片的大框 */
+.six .pics{
+    height: 55px;
+    border-bottom: 1px solid #fd8918;
+    border-top: 1px solid #fd8918;
+    /* 可视区域隐藏 */
+    overflow: hidden;
+}
+
+/* 底部样式 */
+.footer{
+    width: 157px;
+    padding-top: 30px;
+}
+
+.footer .right, .footer .logo{
+	align-content: center;
+    float: left;
+}
+
+.footer .logo{
+	margin-left: 200px;
+	margin-right: 50px;
+}
+
+.footer .logo img{
+	margin-left: 100px;
+	margin-right: 50px;
+}
+
+.footer .right{
+    width: 600px;
+    margin-top: 25px;
+    /* color: white; */
+}
+
+.footer .right li{
+    display: block;
+    float: left;
+    height: 35px;
+    line-height: 35px;
+}
+
+.footer .right li span{
+    padding: 0px 10px;
+}
