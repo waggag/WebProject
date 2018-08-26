@@ -31,11 +31,11 @@ li{
 .header .top{
     height: 39px;
     background-color: #fd8918;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e70d0d;
 }
 /*设置inner的宽度和外边距*/
 .inner{
-    width: 1200px;
+    width: 100%;
     /* text-align: center;*/
     margin: 0 auto;
 }
@@ -44,12 +44,14 @@ li{
 .header .top .left{
     float: left;
     margin-top: 10px;
+    margin-left: 3cm;
  }
 
  /*right标签里的各项内容*/
  .header .top .right{
     float: right;
     margin-top: 10px;
+    margin-right: 3cm;
  }
 
  .header .top .right div{
@@ -112,13 +114,13 @@ li{
 /* 设置第三部分的内容 */
  .banner{
      height: 527px;
+     width: 100%;
      background-image: url(img/lunbo4.jpg);
      /*相对定位，一般是配合绝对定位出现的，作为绝对定位的参照点*/
      position: relative;
  }
 
  .banner div{
-     width: 70px;
      height: 70px;
      /*绝对定位*/
      position: absolute;
@@ -129,10 +131,10 @@ li{
 
  /* 设置其距离左右的位置 */
  .banner .left_btn{
-     left: 200px;
+     left: 10%;
  }
  .banner .right_btn{
-     right: 200px;
+     right: 10%;
  }
 
 /* 第四部分的内容 */
