@@ -5,45 +5,36 @@
     <meta charset="utf-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <!-- <link href="css/bootstrap.css" rel="stylesheet"> -->
-
     <link rel="stylesheet" href="css/admin.css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
-
     <script src="js/lib/modernizr.js"></script>
-
   </head>
   <body id="dashboard-page" class="bg-gray-light">
+	<nav class="navbar navbar-fixed-top not-collapse bg-g-ln-gray" role="navigation">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#" class="hover-white-shade-bg">
+				影院售票管理系统
+				<small class="font-w-100 text-gray-alt hidden-xs hidden-sm"></small>
+			</a>
+		</div>
+		<div id="top-nav">
+			<!-- <a href="https://wrapbootstrap.com/theme/sugoi-admin-WB0H6TMC9" type="button" class="btn btn-default navbar-btn navbar-right btn-primary m-r-30 mm-r-10">Purchase</a> -->
+			<div class="navbar-dropdown navbar-right navbar-avatar">
+				<a href="#" data-target="#topavatar-toggle" class="hover-no-underline dropdown-toggle m-lr-30 mm-lr-10"
+					data-toggle="dropdown">
+					<img src="placeholders/avatars/avatar.jpg" class="img-circle" width=25>
+					<span class="text-gray-light hidden-sm hidden-xs">waggag</span>
+					<span class="caret text-white hidden-sm hidden-xs"></span>
+				</a>
+				<ul id="topavatar-toggle" class="dropdown-menu avatar-dropdown">
+					<li><a href="settings.html">设置</a></li>
+					<li><a href="login.html">登出</a></li>
+				</ul>
+			</div>
+	
+		</div>
+	</nav>
 
-  	<nav class="navbar navbar-fixed-top not-collapse bg-g-ln-gray" role="navigation">
-  		<div class="navbar-header">
-		    <a class="navbar-brand" href="#" class="hover-white-shade-bg">
-		    	影院售票管理系统
-		    	<small class="font-w-100 text-gray-alt hidden-xs hidden-sm"></small>
-		    </a>
-		  </div>
-	  	<div id="top-nav">
-	  		<!-- <a href="https://wrapbootstrap.com/theme/sugoi-admin-WB0H6TMC9" type="button" class="btn btn-default navbar-btn navbar-right btn-primary m-r-30 mm-r-10">Purchase</a> -->
-	  		<div class="navbar-dropdown navbar-right navbar-avatar">
-	  			<a href="#" data-target="#topavatar-toggle" class="hover-no-underline dropdown-toggle m-lr-30 mm-lr-10" data-toggle="dropdown">
-						<img src="placeholders/avatars/avatar.jpg" class="img-circle" width=25>
-						<span class="text-gray-light hidden-sm hidden-xs">任志伟</span>
-						<span class="caret text-white hidden-sm hidden-xs"></span>
-					</a>
-					<ul id="topavatar-toggle" class="dropdown-menu avatar-dropdown">
-				<li><a href="settings.html">设置</a></li>
-				<li><a href="login.html">登出</a></li>
-	        </ul>
-	  		</div>
-	  		
-	  	</div>
-		</nav>
+		
 
 		<div class="sidebar bg-gray-dark text-white text-center pushy pushy-left">
 			<header class="bg-g-ln-gray p-tb-30 pm-tb-10 p-lr-10 b-bot-2px-gray-dark hidden-xs">
