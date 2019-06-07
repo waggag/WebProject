@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>test</title>
+</head>
+
+<body>
+
+<div onclick="setSize()" style="width:100px; height:100px; left:200px; top:200px; position:absolute; background-color:#F00" id="div">
+	
+</div>
+
+<input type="text" id="txt" />
+
+<input type="button" onclick="focusThis()" value="获取焦点" />
+
+<script type="text/javascript">
+var txt=document.getElementById("txt");
+
+function focusThis()
+{
+	txt.focus();
+}
+
+var div=document.getElementById("div");
+function setSize()
+{
+	var a=div.style.height;//--------------带单位px的数据(Chrome and Mozilla)
+	var b=div.style.pixelHeight;//-----not for Mozilla
+	var c=div.clientHeight;//------for Chrome and Mozilla it's a number data
+	var d=div.offsetHeight;//------for Chrome and Mozilla it's a number data
+	
+	alert("a="+a+typeof(a)+"---b="+b+typeof(b)+"---c="+typeof(c)+c+"---d="+d+typeof(d));
+	
+	/*div.clientHeight=200;
+	alert("client");*/
+	/*div.offsetHeight=200;
+	alert("offset");*/
+	div.style.height=500+"px"//------for Chrome and Mozilla it's used for set DIV size
+	alert("styleheight");
+}
+
+</script>
+</body>
+</html>

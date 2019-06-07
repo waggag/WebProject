@@ -1,0 +1,503 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/my51JobDwt.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>用户注册页面</title>
+
+<style type="text/css">
+.menuReg
+{
+	background-image:url(images/menu-bg1.gif);
+	width:1000px;
+	height:33px;
+	margin:auto;
+	background-repeat:repeat-x;
+	font-size:12px;
+	color:#FFF;
+	line-height:28px;
+}
+
+.spanmenuReg
+{
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.cenReg
+{
+	width:860px;
+	height:320px;
+	margin:auto;
+	margin-top:30px;
+/*	border:1px solid #0F0;*/
+	margin-bottom:50px;
+}
+
+.cen1Reg
+{
+	background-image:url(images/register-top.gif);
+	width:857px;
+	height:26px;
+	margin:auto;
+/*	border:#F00 1px dashed;*/
+}
+
+.cen2Reg
+{
+	background-image:url(images/register-line.gif);
+	width:3px;
+	height:274px;
+	margin-left:1px;
+	display:inline-block;
+	float:left;
+}
+
+.cen3Reg
+{
+	width:851px;
+	height:272px;
+	float:left;
+	font-size:12px;
+	color:#414141;
+	font-family:"宋体";
+}
+
+.cen4Reg
+{
+	width:3px;
+	height:274px;
+	background-image:url(images/register-line.gif);
+	float:left;
+}
+
+.cen5Reg
+{
+	background-image:url(images/register-bottom.gif);
+	height:20px;
+	width:857px;
+	float:left;
+	margin-left:1px;
+}
+
+.btnDivReg
+{
+	width:127px;
+	height:39px;
+	margin:auto;
+	margin-top:20px;
+	background-color:#0FF;
+}
+
+.tableReg
+{
+	width:600px;
+	height:150px;
+	margin-left:40px;
+	
+}
+
+.crowReg
+{
+	width:760px;
+	height:50px;
+	/*border:1px solid #0F0;*/
+	line-height:50px;
+	margin-left:50px;
+	text-align:left;
+}
+
+
+
+
+</style>
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+<style type="text/css">
+.spandwt
+{
+	display:block;
+	text-align:center;
+	line-height:25px;
+	font-size:12px;
+	color:#414141;
+	font-family:"宋体";
+}
+.divdwt
+{
+	display:block;
+	background-image:url(images/bottom-bg.gif);
+	text-align:center;
+	height:35px;
+	width:1000px;
+	color:#FFF;
+	line-height:30px;
+	font-size:12px;
+	font-family:"宋体";
+	margin:auto;
+}
+
+.adwt
+{
+	color:#FFF;
+	font-size:12px;
+	text-decoration:none;
+	font-family:"宋体";
+}
+
+.adwt:hover
+{
+	color:#FFF;
+	font-size:12px;
+	text-decoration:none;
+	font-family:"宋体";
+}
+
+.bodydwt
+{
+	text-align:center;
+}
+
+.imgdwt
+{
+	border:0px;
+}
+.headdwt
+{
+	width:960px;
+	height:65px;
+	margin:auto;/*居中*/
+	position:relative;
+	vertical-align:bottom;
+	/*border:1px solid #000;*/
+}
+
+.headerleftdwt
+{
+	/*border:1px solid #000;*/
+	float:left;
+	margin-bottom:0px;
+	height:65px;
+}
+
+.headerrightdwt
+{
+	/*border:1px solid #000;*/
+	float:right;
+	height:31px;
+	vertical-align:bottom;
+	margin-top:34px;
+}
+
+.imgheaderdwt
+{
+	border:0px;
+}
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="bodydwt">
+<div class="headdwt">
+	<div class="headerleftdwt"><img src="images/logo.gif" /></div>
+    <div class="headerrightdwt">
+        <a href="login.html" name="pic"><img src="images/menu1-2.gif" class="imgheaderdwt" /></a>
+        <a href="search.html" name="pic"><img src="images/menu2-2.gif" class="imgheaderdwt" /></a>
+        <a href="intro.html" name="pic"><img src="images/menu3-2.gif" class="imgheaderdwt" /></a>
+    </div>
+</div>
+<!-- InstanceBeginEditable name="EditRegion3" -->
+
+
+<!--菜单栏开始-->
+<div class="menuReg">
+	我的简历<span class="spanmenuReg">|</span>个人搜索器<span class="spanmenuReg">|</span>职位收藏夹<span class="spanmenuReg">|</span>工作申请记录<span class="spanmenuReg">|</span>退出
+</div>
+<!--菜单栏结束-->
+<!--中间内容开始-->
+<div class="cenReg">
+	<div class="cen1Reg"></div>
+	<div class="cen2Reg"></div>
+    <div class="cen3Reg">
+    	<div class="crowReg">
+        	<span style="font-size:14px; color:#666666; font-weight:bold; font-family:'宋体';">会员信息：</span><img src="images/dot_line_1.gif" align="middle" />
+        </div>
+        <div class="tableReg">
+        	<form id="frm" action="open.html">
+        	<table cellspacing="5" border="0">
+            	<tr>
+                	<td style="width:50px;">
+                    	<img src="images/register-arrow.gif" />
+                    </td>
+                    <td style="width:60px;">
+                    	E-mail:
+                    </td>
+                    <td style="width:150px">
+                    	<input type="text" id="email" style="width:150px" />
+                    </td>
+                    <td style="width:140px;">
+                    	<a href="javascript:validateEmail()"><img src="images/register-check.gif" style="border:0px" /></a>
+                    </td>
+                    <td style="width:430px;" align="left">
+                    	请填写常用电子邮件
+                    </td>
+                </tr>
+                <tr>
+                	<td>
+                    	<img src="images/register-arrow.gif" />
+                    </td>
+                    <td>
+                    	会员名:
+                    </td>
+                	<td>
+                    	<input type="text" id="userName" style="width:150px" />
+                    </td>
+                    <td>
+                    	<a href="javascript:validateUserName()"><img src="images/register-check.gif" style="border:0px;" /></a>
+                    </td>
+                    <td align="left">
+                    	会员名须以字母开头，至少6位
+                    </td>
+                </tr>
+                <tr>
+                	<td>
+                    	<img src="images/register-arrow.gif" />
+                    </td>
+                	<td>
+                    	密码:
+                    </td>
+                    <td>
+                    	<input type="password" id="pwd1" onblur="validatePwd1()" style="width:150px" />
+                    </td>
+                    <td id="pwd1InnerHTML" align="left" style="padding-left:13px;" colspan="2">
+                    	密码设置至少6位
+                    </td>
+                </tr>
+                <tr>
+                	<td>
+                    	<img src="images/register-arrow.gif" />
+                    </td>
+                	<td>
+                    	重复密码
+                    </td>
+                    <td>
+                    	<input type="password" id="pwd2" onblur="validatePwd2()" style="width:150px;" />
+                    </td>
+                    <td id="pwd2InnerHTML" colspan="2" align="left" style="padding-left:13px">
+                    
+                    </td>
+                </tr>
+                <tr>
+                	<td colspan="5" style="height:30px">
+                		<img src="images/dot_line_2.gif" />
+                    </td>
+                </tr>
+                <tr>
+                	<td colspan="5" style="height:50px;">
+                    	<input id="subBtn" type="button" onmouseout="resetpic()" onmouseover="changepic()" onclick="submitData()" style="background-image:url(images/register-sm1.gif); border:0px; width:127px; height:39px" />
+                    </td>
+                </tr>
+            </table>
+            </form>
+        </div>
+       </div>
+    <div class="cen4Reg"></div>
+    <div class="cen5Reg"></div>
+
+</div>
+<!--中间内容结束-->
+<!-- InstanceEndEditable -->
+</div>
+<div class="divdwt">
+	网站导航&nbsp;&nbsp;|&nbsp;&nbsp;<a href="index.html" class="adwt">网站首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="search.html" class="adwt">职位搜索</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="login.html" class="adwt">Myjob</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="register.html" class="adwt">用户注册</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="login.html" class="adwt">用户登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="intro.html" class="adwt">简历管理</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="company.html" class="adwt">招聘公司</a>
+</div>
+<div>
+  <span class="spandwt">人才招聘&nbsp;Email:hr@51job.com</span>
+  <span class="spandwt">个人求职&nbsp;Email:club@51job.com&nbsp;&nbsp;或垂询:800-820-5100</span>
+  <span class="spandwt">未经本招聘网站同意，不得转载本网站之所有招聘信息及作品</span>
+  <span class="spandwt">无忧工作网版权所有&copy;1999-2007</span>
+  <span class="spandwt"><a href="index.html"><img src="images/bottom1.gif" class="imgdwt" /></a></span>
+</div>
+
+<!-- InstanceBeginEditable name="EditRegion4" -->
+<script type="text/javascript">
+
+var submBtn=document.getElementById("subBtn");
+
+var flag1=false;//邮箱验证是否成功的标志
+var flag2=false;//用户名验证是否成功的标志
+var flag3=false;//第一次密码验证是否成功的标志
+var flag4=false;//第二次密码验证是否成功的标志
+
+
+
+function changepic()
+{
+	submBtn.style.backgroundImage="url(images/register-sm2.gif)";
+}
+
+function resetpic()
+{
+	submBtn.style.backgroundImage="url(images/register-sm1.gif)";
+}
+
+function submitData()
+{
+	
+	if(flag1&&falg2&&flag3&&flag4)
+	{
+		var frm=document.getElementById("frm");
+		frm.submit();
+	}
+	else
+	{
+		alert("注册失败");
+	}
+	
+}
+
+	var rightPwd1=document.getElementById("rightPwd1");
+	var wrongPwd1=document.getElementById("wrongPwd1");
+	var nullPwd1=document.getElementById("nullPwd1");
+	
+	
+	
+	rightPwd1.style.left=(document.body.clientWidth-250)/2+45;
+	
+	wrongPwd1.style.left=(document.body.clientWidth-250)/2+45;
+	
+	nullPwd1.style.left=(document.body.clientWidth-250)/2+45;
+	
+	var rightPwd2=document.getElementById("rightPwd2");
+	var wrongPwd2=document.getElementById("wrongPwd2");
+	var nullPwd2=document.getElementById("nullPwd2");
+
+	rightPwd2.style.left=(document.body.clientWidth-250)/2+45;
+	
+	wrongPwd2.style.left=(document.body.clientWidth-250)/2+45;
+	
+	nullPwd2.style.left=(document.body.clientWidth-250)/2+45;
+	
+	
+function setPositions()
+{
+	rightPwd1.style.left=(document.body.clientWidth-250)/2+45;
+	
+	wrongPwd1.style.left=(document.body.clientWidth-250)/2+45;
+	
+	nullPwd1.style.left=(document.body.clientWidth-250)/2+45;
+	
+	rightPwd2.style.left=(document.body.clientWidth-250)/2+45;
+	
+	wrongPwd2.style.left=(document.body.clientWidth-250)/2+45;
+	
+	nullPwd2.style.left=(document.body.clientWidth-250)/2+45;
+}
+
+onresize=setPositions;
+
+
+function validatePwd1()
+{
+	var pwd1InnerHTML=document.getElementById("pwd1InnerHTML");
+	
+	var rule=/^.{6,}$/;
+	var value=document.getElementById("pwd1").value;
+	
+	if(value=="")
+	{
+		pwd1InnerHTML.innerHTML="<font color='red' style='font-size:12px;'>请输入密码</font>";
+		return;
+	}
+	
+	if(rule.test(value))
+	{
+		pwd1InnerHTML.innerHTML="<font color='#FF840D' style='font-size:12px;'>您输入的密码是合法的！</font>";
+	}
+	else
+	{
+		pwd1InnerHTML.innerHTML="<font color='red' style='font-size:12px;'>请输入不少于6位的密码！</font>";
+	}
+}
+
+function validatePwd2()
+{
+	var value=document.getElementById("pwd2").value;
+	var value0=document.getElementById("pwd1").value;
+	var pwd2InnerHTML=document.getElementById("pwd2InnerHTML");
+	
+	if(value=="")
+	{
+		pwd2InnerHTML.innerHTML="<font color='red' style='font-size:12px;'>请输入确认密码！</font>";
+		return;
+	}
+	
+	if(value!=value0)
+	{
+		pwd2InnerHTML.innerHTML="<font color='red' style='font-size:12px;'>两次输入的密码不一致，请重新输入！</font>";
+		return;
+	}
+	
+	pwd2InnerHTML.innerHTML="<font color='#FF840D' style='font-size:12px;'>请牢记您输入的密码！</font>";
+}
+
+
+
+function validateUserName()
+{
+	
+	var rule=/^[a-zA-Z]\w{5,}$/;
+	
+	var userName=document.getElementById("userName").value;
+	if(userName=="")
+	{
+		alert("请输入会员名");
+	}
+	else
+	{
+		if(rule.test(userName))
+		{
+			window.showModalDialog("checkuser.html","_blank","dialogWidth=250px; dialogHeight=100px; status=no;");
+		}
+		else
+		{
+			alert("请按规则输入会员名");
+		}
+	}
+}
+
+
+
+function validateEmail()
+{
+	var email=document.getElementById("email").value;
+	if(email=="")
+	{
+		alert("邮箱不能为空");
+		return;
+	}
+	
+	var rule=/^\w+@\w+(\.com)+(\.cn)?$/;
+	
+	if(rule.test(email))
+	{
+		window.showModalDialog("checkemail.html","_blank","dialogWidth=250px; dialogHeight=100px; status=no;");
+	}
+	else
+	{
+		alert("请输入正确的邮箱地址");
+	}
+	
+}
+
+
+</script>
+<!-- InstanceEndEditable -->
+</body>
+<!-- InstanceEnd --></html>
+
