@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>轮播图</title>
+</head>
+
+<body>
+
+    <img id="banner" src="img/banner_1.jpg" width="100%">
+    <script>
+        var number = 1;
+
+        function changer_image() {
+            number++;
+            if (number > 3) {
+                number = 1;
+            }
+            document.getElementById("banner").src = "img/banner_" + number + ".jpg";
+        }
+        setInterval(changer_image, 3000)
+    </script>
+
+    <input type="button" value="刷新" id="btn">
+    <script>
+        var btn = document.getElementById("btn");
+        btn.onclick = function () {
+            //刷新页面
+            location.reload();
+           
+        }
+         //获取href
+         var href = location.href();
+        alert(href);
+    </script>
+
+</body>
+
+</html>

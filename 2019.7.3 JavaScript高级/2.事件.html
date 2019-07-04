@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>获取元素对象</title>
+    </head>
+
+    <body>  
+        <img src="img/off.gif" id="light" onclick="fun()">
+        <img src="img/off.gif" id="light1">
+
+    </body>
+    <script>
+        //事件绑定方式1
+        function fun(){
+            alert('我被点击了');
+        }
+        //事件绑定方式2
+        var light = document.getElementById("light1");
+        //绑定事件
+        light.onclick = fun;
+    </script>
+</html>

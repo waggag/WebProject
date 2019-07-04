@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>99乘法表</title>
+    <style>
+        td {
+            border: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        document.write("<table  align='center'>")
+        for (var i = 1; i <= 9; i++) {
+            document.write("<tr>")
+            for (var j =
+                    1; j <= i; j++) {
+                document.write("<td>");
+                document.write(j + "*" + i + "=" + i * j + "&nbsp&nbsp&nbsp");
+
+                document.write("</td>")
+            }
+            document.write("<tr>");
+        }
+
+        document.write("</table>")
+        //创建js方法1
+        var fun1 = new Function("a", "b", "alert(a+b)");
+        fun1(2, 3);
+
+        // 创建js方法2
+        function fun2(a,b) {
+            alert(a+b);
+        }
+        fun1(6,5);
+         // 创建js方法3
+         var fun3 = function(a,b){
+             document.write(a+"fun3"+b);
+         }
+         fun3(5,5);
+         var number =  Math.floor(Math.random()*100+1);
+         document.write("1-100随机数"+number);
+         
+         //正则表达式对象
+        var reg = new RegExp("\w{6,12}");
+        var reg2 = /w{6,12}/;
+
+
+        //全局对象方法,eval解析字符串,作为方法执行
+        var str = "alert('wagaga')";
+         eval(str);
+    </script>
+
+</body>
+
+</html>
