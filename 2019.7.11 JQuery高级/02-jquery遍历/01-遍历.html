@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(function() {
+				//1.获取所有的ul下的li
+				var citys = $("#city li");
+
+				//2.遍历内容
+				// for (var i = 0; i < citys.length; i++) {
+				// 	citys[i].innerHTML;
+				// }
+
+				//3.jQuery对象.each(callback)
+// 				citys.each(function(index, element) {
+// 					//3.1第一种方式
+// 					//alert(this.innerHTML);
+// 
+// 					//3.2第二种方式
+// 					//alert(index + ":" + element.innerHTML);
+// 					alert(index + ":" + $(element).html());
+// 				});
+				
+				//for ... of JQuery3.0之后提供的方法
+				for (li of citys) {
+					alert(li.innerHTML);
+				}
+			})
+		</script>
+	</head>
+	<body>
+		<ul id="city">
+			<li>北京</li>
+			<li>上海</li>
+			<li>天津</li>
+			<li>重庆</li>
+		</ul>
+	</body>
+</html>

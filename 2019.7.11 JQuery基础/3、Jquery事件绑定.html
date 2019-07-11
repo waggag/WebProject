@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <title>Jquery快速入门</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <div id="div1">div1....</div>
+    <div id="div2">div2....</div>
+    <input type="button" value="点我" id="b1">
+
+
+    <script>
+        //1.给Button按钮添加单击事件
+        $("#b1").click(function(){
+            alert("单击事件");
+        });
+
+        //2.入口函数
+        window.onload = function(){
+
+        }
+
+        $(function () {
+         
+        });
+
+        //3.样式控制
+        $(function () {
+            $("#div1").css("background-color", "red");
+            $("#div1").css("backgroundColor", "red");
+        });
+     
+    </script>
+</body>
+
+</html>
